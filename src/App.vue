@@ -13,19 +13,19 @@
     </v-app-bar>
 
     <v-main>
-      <HelloWorld/>
+      <Estimate/>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+import Estimate from './components/Estimate';
 
 export default {
   name: 'App',
 
   components: {
-    HelloWorld,
+    Estimate,
   },
 
   data: () => ({
