@@ -46,15 +46,20 @@
         filename:"None"
       }
     },
+mounted() {
+        this.axios.get("https://0b23852dc7fe.ngrok.io/wakeup_test"
+        ).then(() => {
+        }).catch(() => {
+            alert("back end server is off-line \n please contact @Hasshi7965");
+        });
+    },
     methods: {
       getFileContent (file) {
         try {
           this.content = file
-          console.log(file)
           this.filename = file.name
-          console.log(this.filename)
         } catch (e) {
-          console.log(e)
+          alert(e)
         }
       },
       upload_estimate_server(){
